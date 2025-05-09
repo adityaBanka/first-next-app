@@ -1,0 +1,23 @@
+{
+    "id" : 1,
+    "question" : [
+        {
+            "text" : "This is a question?",
+            "media" : {
+                "type" : "image",
+                "url" : "https://example.com/image.jpg"
+            }
+        }
+    ],
+    "options" : [
+        {
+            "text" : "Option 1",
+            "media" : {
+                "type" : "video",
+                "url" : "https://example.com/video.mp4"
+            },
+            "isCorrect" : true,
+            "explanation" : "This is the explanation for option 1."
+        }
+    ]
+}
