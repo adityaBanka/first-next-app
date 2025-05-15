@@ -10,7 +10,7 @@ function Header() {
     const router = useRouter();
 
     return (
-        <div className="fixed w-full h-fit z-50 p-3 flex items-center justify-between">
+        <div className="fixed w-full h-fit z-100 p-3 flex items-center justify-between">
 
             <ProgressiveBlur
                 className="h-32 w-full absolute top-0 left-0 -z-10"

@@ -2,7 +2,7 @@ function BGpoly() {
     return (
         <div
             aria-hidden="true"
-            className="absolute transform-gpu -z-10 overflow-hidden blur-3xl pointer-events-none"
+            className="absolute transform-gpu overflow-hidden blur-3xl pointer-events-none"
         >
             <div
                 style={{
