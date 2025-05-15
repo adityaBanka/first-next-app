@@ -10,7 +10,7 @@ function Header() {
     const router = useRouter();
 
     return (
-        <div className="fixed w-full h-fit p-3 flex items-center justify-between">
+        <div className="fixed w-full h-fit z-50 p-3 flex items-center justify-between">
 
             <ProgressiveBlur
                 className="h-32 w-full absolute top-0 left-0 -z-10"
@@ -25,10 +25,10 @@ function Header() {
 
             <div className="flex items-center justify-center space-x-5">
                 <button
-                    onClick={() => router.push('/sign-up')}
+                    onClick={() => router.push('/sign-in')}
                     className="p-3 bg-gray-300 rounded-xl hover:bg-gray-400"
                 >
-                    Sign Up/In
+                    Sign in
                 </button>
             </div>
         </div>
