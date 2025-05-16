@@ -10,7 +10,7 @@ function Footer() {
       <div className='flex justify-center space-x-15'>
 
         <div className='flex flex-col text-gray-300 space-y-1'>
-          <p className='text-lg text-white pb-1 underline underline-offset-2'>S Banka</p>
+          <p className='text-lg text-white pb-1 underline underline-offset-2'>sBanka.in</p>
           <Link href="/" className="hover:text-white hover:underline underline-offset-2 w-fit">Home</Link>
           <Link href="/" className="hover:text-white hover:underline underline-offset-2 w-fit">Quiz</Link>
           <Link href="/" className="hover:text-white hover:underline underline-offset-2 w-fit">Batches</Link>
