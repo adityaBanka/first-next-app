@@ -8,7 +8,7 @@ function Footer() {
     <div className="min-h-32 h-fit bg-gray-800">
 
 
-      <div className='flex justify-center p-10'>
+      <div className='flex justify-center p-10 space-x-15'>
 
         <div className='flex flex-col text-gray-300 space-y-1'>
           <p className='text-lg text-white pb-1 underline underline-offset-2'>S Banka</p>
@@ -19,7 +19,7 @@ function Footer() {
           <Link href="/" className="hover:text-white hover:underline underline-offset-2 w-fit">Privacy Policy</Link>
         </div>
 
-        <Separator orientation="vertical" className='min-h-50 my-auto mx-10' />
+        <Separator orientation="vertical" className='min-h-50 my-auto' />
 
         <div className='flex flex-col text-gray-300 space-y-1'>
           <p className='text-lg text-white pb-1 underline underline-offset-2'>Address</p>
@@ -35,7 +35,7 @@ function Footer() {
           <p>Email: subhashbanka@gmail.com</p> */}
         </div>
 
-        <Separator orientation="vertical" className='min-h-50 my-auto mx-10' />
+        <Separator orientation="vertical" className='min-h-50 my-auto' />
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2019.1750522992584!2d85.11758207045936!3d25.612863300941545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed583b6b51a497%3A0xb85436170f2a7326!2sBanka%20Computer%20Education!5e0!3m2!1sen!2sin!4v1747428225007!5m2!1sen!2sin" width="500" height="300" loading="lazy"></iframe>
 
