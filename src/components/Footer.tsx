@@ -7,7 +7,6 @@ function Footer() {
   return (
     <div className="min-h-32 h-fit bg-gray-800 space-y-10 p-10">
 
-
       <div className='flex justify-center space-x-15'>
 
         <div className='flex flex-col text-gray-300 space-y-1'>
