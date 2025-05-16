@@ -5,10 +5,10 @@ import Logo_text from "@/assets/logo_text.svg"
 
 function Footer() {
   return (
-    <div className="min-h-32 h-fit bg-gray-800">
+    <div className="min-h-32 h-fit bg-gray-800 space-y-10 p-10">
 
 
-      <div className='flex justify-center p-10 space-x-15'>
+      <div className='flex justify-center space-x-15'>
 
         <div className='flex flex-col text-gray-300 space-y-1'>
           <p className='text-lg text-white pb-1 underline underline-offset-2'>S Banka</p>
@@ -47,13 +47,13 @@ function Footer() {
 
       <Separator className='max-w-[80%] mx-auto mb-10' />
 
-      <div className='pb-10 flex items-center justify-center space-x-10 h-full'>
+      <div className='flex items-center justify-center space-x-5'>
 
         <Link href="/" className="inline-block pointer-events-auto">
           <Image src={Logo_text} alt="logo" width={200} height={100} className="h-12" />
         </Link>
 
-        <Separator orientation="vertical" className='min-h-12 h-full' />
+        <Separator orientation="vertical" className='min-h-12' />
 
         <div className='text-gray-300'>
           <p>© 2025 sbanka.in & it&apos;s properties. All rights reserved.</p>
