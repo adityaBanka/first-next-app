@@ -5,7 +5,7 @@ import Logo_text from "@/assets/logo_text.svg"
 
 function Footer() {
   return (
-    <div className="min-h-32 h-fit bg-gray-800 space-y-10 p-10">
+    <div className="bg-gray-800 space-y-10 p-10">
 
       <div className='flex justify-center space-x-15'>
 
