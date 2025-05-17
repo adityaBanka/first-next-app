@@ -5,7 +5,7 @@ import Logo_text from "@/assets/logo_text.svg"
 
 function Footer() {
   return (
-    <div className="bg-gray-800 space-y-10 p-10">
+    <div className="bg-gray-800 space-y-10 p-20">
 
       <div className='flex justify-center space-x-15'>
 
@@ -44,7 +44,7 @@ function Footer() {
 
 
 
-      <Separator className='max-w-[80%] mx-auto mb-10' />
+      <Separator className='max-w-[90%] mx-auto'/>
 
       <div className='flex items-center justify-center space-x-5'>
 
