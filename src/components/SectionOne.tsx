@@ -12,13 +12,13 @@ function SectionOne() {
                 <div className='space-x-5'>
                     <button
                         onClick={() => router.push('/sign-in')}
-                        className='bg-white/50 p-5 rounded-full hover:bg-white/100 hover:scale-105 transition-all duration-100 ease-in-out'
+                        className='bg-white/50 p-5 rounded-full hover:bg-white/100 hover:scale-105 transition-all duration-100 ease-in-out hover:cursor-pointer'
                     >
                         Join Batch
                     </button>
                     <button
                         onClick={() => router.push('/sign-in')}
-                        className='bg-white/50 p-5 rounded-full hover:bg-white/100 hover:scale-105 transition-all duration-100 ease-in-out'
+                        className='bg-white/50 p-5 rounded-full hover:bg-white/100 hover:scale-105 transition-all duration-100 ease-in-out hover:cursor-pointer'
                     >
                         Take Test
                     </button>
