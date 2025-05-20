@@ -8,7 +8,7 @@ function Page() {
   const [showRequirements, setShowRequirements] = useState(false)
   const [serverError, setServerError] = useState('')
   const [showPassword, setShowPassword] = useState(false)
-  
+
   const passwordCriteria = {
     minLength: password.length >= 8,
     maxLength: password.length <= 64,
@@ -27,23 +27,30 @@ function Page() {
     }
 
     try {
-      await signup(formData)
+      const response = await signup(formData)
       setShowRequirements(false)
       setServerError('')
+      
       // Handle successful signup
+      console.log('Signup successful:', response)
+      // TODO: Add redirect or success message
+      
     } catch (error) {
-      setServerError(error instanceof Error ? error.message : 'An error occurred')
+      console.error('Signup error:', error)
+      if (error instanceof Error) {
+        setServerError(error.message)
+      } else {
+        setServerError('An unexpected error occurred')
+      }
     }
   }
 
   const renderPasswordRequirements = () => {
     if (!showRequirements) return null;
-    
+
     return (
       <div className="space-y-1 text-sm mt-2">
-        {serverError && (
-          <p className="text-red-500 font-medium mb-2">{serverError}</p>
-        )}
+
         <p className={`${passwordCriteria.minLength ? 'text-green-500' : 'text-red-400'}`}>
           • At least 8 characters
         </p>
@@ -73,7 +80,7 @@ function Page() {
         <div className='w-full m-10 p-10 bg-white/50 backdrop-blur-2xl shadow-2xl rounded-2xl'>
           <form action={handleSubmit}>
             <h1 className='text-3xl font-semibold text-center mb-10'>Sign-in</h1>
-            
+
             <div className='space-y-4'>
               <input
                 name="email"
@@ -90,7 +97,7 @@ function Page() {
                       name="password"
                       type={showPassword ? "text" : "password"}
                       placeholder="Password"
-                      maxLength={64}
+                      maxLength={65}
                       className='w-full p-2 pl-5 pr-10 rounded-full border border-gray-300'
                       onChange={(e) => setPassword(e.target.value)}
                       value={password}
@@ -115,6 +122,10 @@ function Page() {
                   </div>
                 </div>
 
+                {serverError && (
+                  <p className="text-red-500 font-medium mb-2">{serverError}</p>
+                )}
+
                 <button
                   type="button"
                   onClick={() => setShowRequirements(!showRequirements)}
@@ -126,8 +137,8 @@ function Page() {
                 {renderPasswordRequirements()}
               </div>
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className='w-full bg-blue-500 text-white p-2 rounded-full disabled:bg-gray-400 disabled:cursor-not-allowed'
                 disabled={!isValidPassword}
               >
@@ -137,7 +148,7 @@ function Page() {
           </form>
 
           <p className="text-center mt-4">
-            Forgot your password? <Link href="/reset-password" className="text-cyan-600 hover:underline underline-offset-3">Reset it here.</Link>
+            Forgot your password? <Link href="/reset-password" className="text-cyan-600 hover:underline underline-offset-3">Reset here.</Link>
           </p>
         </div>
       </section>
